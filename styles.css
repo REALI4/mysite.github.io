@@ -1,80 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+  font-family: 'Arial', sans-serif;
+  background-color: #121212; /* Темный фон */
+  color: white;
+  line-height: 1.6;
 }
 
 header {
-    background-color: #800020; /* багровый цвет */
-    color: white;
-    padding: 10px 0;
-    text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background-color: #222;
 }
 
-header .logo {
-    font-size: 24px;
-    font-weight: bold;
+header .logo img {
+  height: 40px;
 }
 
-header nav ul {
-    list-style: none;
-    padding: 0;
+nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
 }
 
-header nav ul li {
-    display: inline;
-    margin: 0 10px;
+nav ul li {
+  font-size: 16px;
 }
 
-header nav ul li a {
-    color: white;
-    text-decoration: none;
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
 }
 
-header .cart a {
-    color: white;
-    text-decoration: none;
+nav ul li a:hover {
+  color: #800020; /* Настоящий багровый цвет */
 }
 
-.banner {
-    background-color: #e6e6e6;
-    padding: 50px 0;
-    text-align: center;
+.contact a {
+  color: white;
+  text-decoration: none;
+  margin-right: 20px;
 }
 
-.banner h1 {
-    margin: 0;
-    font-size: 36px;
+button {
+  background-color: #800020; /* Настоящий багровый цвет */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
-.popular-products {
-    padding: 20px;
-    text-align: center;
+button:hover {
+  background-color: #660018; /* Темный багровый для ховера */
 }
 
-.product {
-    display: inline-block;
-    margin: 10px;
-    padding: 10px;
-    background-color: white;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    width: 200px;
+.catalog {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px 0;
 }
 
-.product img {
-    width: 100%;
-    height: auto;
+.product-card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 250px;
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.3s ease;
+  background-color: #fff;
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.product-card h3 {
+  margin-top: 15px;
+  font-size: 22px;
+  color: #333;
+}
+
+.product-card p {
+  font-size: 18px;
+  color: #555;
+  margin: 10px 0;
 }
 
 footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+  text-align: center;
+  padding: 20px;
+  background-color: #222;
+  color: white;
+  font-size: 14px;
 }
